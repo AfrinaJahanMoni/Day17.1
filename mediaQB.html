@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries & break</title>
+    <link rel ="icon"type="image/x-icon"href="images.ico">
+    <style>
+          .media{
+            height:320px;
+            width:800px;
+            background-color: lightblue;
+            padding:10px 10px 10px 10px;
+          }
+          .a{
+            text-align: center;
+            font-size:5vw;
+            background-color: red;
+            height:100px;
+            width:800px;
+         }
+         .b{
+            text-align: center;
+            font-size:5vw;
+            background-color: green; 
+            height:100px;
+            width:800px;
+         }
+         .c{
+            text-align: center;
+            font-size:5vw;
+            background-color: gray;
+            height:100px;
+            width:800px;
+         }
+@media screen and (max-width:800px){
+     .media {
+        background-color: beige;
+     }
+    }
+     @media screen and (max-width:600px){
+        .a{
+            background-color: blueviolet;
+        }
+    }
+        @media screen and (max-width:400px){
+        .b{
+            background-color: blueviolet;
+        }
+        @media screen and (max-width:200px){
+        .c{
+            background-color: yellow;
+        }
+     }
+}
+    </style>
+</head>
+<body>
+    <div class="media">Media Queries & Break
+<div class="a">1st line</div>
+<div class="b">2nd line</div>
+<div class="c">3rd line</div>
+    </div> 
+</body>
+</html>
